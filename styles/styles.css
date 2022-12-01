@@ -1,19 +1,27 @@
+/* GENERAL */
 body {
-    font-family: 'Roboto', 'Open Sans', 'Raleway', sans-serif;
+    font-family: 'Roboto','Raleway','Open Sans', sans-serif;
     color: #434455;
 }
-
 ul { list-style: none;}
+:root {
+    --primary-brand-color: #4D5AE5;
+    --shadow-headings-color: #2E2F42;
+    --success-color: #31D0AA;
+    --body-text-color: #434455;
+    --helper-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --light-mode-color: #F4F4FD;
+}
 
-/* HEAADER */
-
+/* HEADER */
 .logo-web{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    color: #4D5AE5;
+    color: var(--primary-brand-color);
 }
 .logo-studio {
     font-family: 'Raleway', sans-serif;
@@ -21,63 +29,58 @@ ul { list-style: none;}
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    color: #2E2F42;
+    color: var(--shadow-headings-color);
 }
 .nav-list-item-link {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--shadow-headings-color);
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 .contact-item-link {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #434455;
+    color: var(--body-text-color);
 }
 
 /* BUTTON-FILTERS */
 
 .button-filter {
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: var(--primary-brand-color);
     background-color: #F4F4FD;
     border: 0cm;
 }
-.button-filter:hover {
-    background-color: #4D5AE5;
+.button-filter:hover, .button-filter:focus {
+    background-color: var(--primary-brand-color);
     color: #FFFFFF;
     border: 0cm;
 }
-.hero-button {
-    font-family: 'Roboto', sans-serif;
+button {cursor:pointer}
+
+.hero-button, hero-button:focus {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.04em;
 
-    background-color: #4D5AE5;
+    background-color: var(--primary-brand-color);
     color: #FFFFFF;
     border: 0cm;
     padding: 16px 32px;
 }
 
 /* LINKS */
-a:hover{
-    font-family: 'Roboto', sans-serif;
+a:hover, a:focus {
     font-weight: 600;
     font-size: 16px
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration-line: underline;
     color: #4D5AE5;
@@ -85,17 +88,61 @@ a:hover{
 a {text-decoration: none;
 }
 
+/* HERO */
+.hero-section-title {    
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background-color:var(--shadow-headings-color);
+}
 
+/* PRINCIPLES */
+.principles-section-list-item-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.principles-section-list-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
 
+}
 
+/* WHAT WE ARE DOING */
+.what-we-are-doing-header, .our-team-header {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--shadow-headings-color);
+}
 
-
-
-
-
-
-
-
-/* ul, ol {list-style: none;} */
-/* a {text-decoration: none;} */
-/* - Вигадати клас для того, щоб прибрати підкресл в лінках і крапки в лістах */
+/* OUR TEAM */
+.our-team-list-item-header{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--shadow-headings-color);
+}
+.our-team-list-item-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+}
+.footer-text{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    background-color: var(--shadow-headings-color);
+}

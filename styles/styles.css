@@ -1,5 +1,8 @@
-.button-filter:hover {}
-a { text-decoration: none;}
+body {
+    font-family: 'Roboto', 'Open Sans', 'Raleway', sans-serif;
+    color: #434455;
+}
+
 ul { list-style: none;}
 
 /* HEAADER */
@@ -12,7 +15,6 @@ ul { list-style: none;}
     letter-spacing: 0.03em;
     color: #4D5AE5;
 }
-
 .logo-studio {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -21,7 +23,6 @@ ul { list-style: none;}
     letter-spacing: 0.03em;
     color: #2E2F42;
 }
-
 .nav-list-item-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -33,7 +34,6 @@ ul { list-style: none;}
     order: 1;
     flex-grow: 0;
 }
-
 .contact-item-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -41,6 +41,61 @@ ul { list-style: none;}
     line-height: 1.5;
     color: #434455;
 }
+
+/* BUTTON-FILTERS */
+
+.button-filter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+    border: 0cm;
+}
+.button-filter:hover {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border: 0cm;
+}
+.hero-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border: 0cm;
+    padding: 16px 32px;
+}
+
+/* LINKS */
+a:hover{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #4D5AE5;
+}
+a {text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ul, ol {list-style: none;} */
 /* a {text-decoration: none;} */
 /* - Вигадати клас для того, щоб прибрати підкресл в лінках і крапки в лістах */

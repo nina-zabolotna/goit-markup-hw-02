@@ -7,7 +7,7 @@
     --helper-text-color: #8E8F99;
     --accent-color: #E7E9FC;
     --light-mode-color: #F4F4FD;
-    --white-color: #FFFFFF;
+    --light-background-color: #FFFFFF;
     --hero-button-click: #404BBF;
 }
 body {
@@ -41,9 +41,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--shadow-headings-color);
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 .contact-item-link {
     font-size: 16px;
@@ -63,20 +60,23 @@ body {
 /* BUTTON-FILTERS */
 
 .button-filter {
+    font-family: inherit;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--primary-brand-color);
     background-color: var(--light-mode-color);
-    border: 0cm;
+    border: none;
     border-radius: 4px;
 }
 .button-filter:hover, .button-filter:focus, .button-filter-active {
     background-color: var(--primary-brand-color);
-    color: var(--white-color);
-    border: 0cm;
+    color: var(--light-background-color);
+    border: none;
+    cursor:pointer;
 }
+
 .hero-button:hover {
     background: var(--primary-brand-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -88,22 +88,19 @@ body {
 
 }
 .hero-button{
+    font-family: inherit;
     padding: 16px 32px;
-    gap: 10px;
-       
     background: var(--primary-brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: 0cm;
+    border: none;
 
     font-weight: 600;
     font-size: 16px;
     line-height: 1.18;
-        
-    align-items: center;
     letter-spacing: 0.04em;
-    
-    color: var(--white-color);
+    color: var(--light-background-color);
+    cursor: pointer;
 }
 
 /* HERO */
@@ -112,7 +109,7 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: var(--white-color);
+    color: var(--light-background-color);
 }
 .hero-section{
     background-color: var(--shadow-headings-color);
@@ -120,12 +117,11 @@ body {
 
 /* PRINCIPLES */
 .principles-section-list-item-header {
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--shadow-headings-color);
 }
 .principles-section-list-item-text {
     font-size: 16px;
@@ -162,9 +158,7 @@ body {
     background-color: var(--light-mode-color);
 }
 .our-team-list-item{
-    background-color: var(--white-color);
-    width: 264px;
-    height: 380px;
+    background-color: var(--light-background-color);
 }
 
 /* FOOTER */

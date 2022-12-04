@@ -46,13 +46,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: var(--body-text-color);
-    text-decoration: none
+    text-decoration: none;
 }
 .nav-list, .contact-list, .button-filters-list, .gallery-list, .principles-section-list, .what-we-are-doing-list, .our-team-list {
     list-style: none;
 }
-.nav-list-item-link:hover {
-    color: var(--body-text-color);
+.nav-list-item-link:hover, .contact-item-link:hover {
+    color: var(--primary-brand-color);
 }
 .nav-list-item-link:active {
     color: var(--primary-brand-color);
@@ -153,12 +153,26 @@ body {
     letter-spacing: 0.02em;
     color: var(--body-text-color);
 }
-
 .our-team{
     background-color: var(--light-mode-color);
 }
 .our-team-list-item{
     background-color: var(--light-background-color);
+}
+
+/* GALLERY */
+.gallery-list-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--shadow-headings-color);
+}
+.gallery-list-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
 }
 
 /* FOOTER */
